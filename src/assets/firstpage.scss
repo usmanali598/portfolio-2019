@@ -1,0 +1,113 @@
+.container{
+    width: 1920px;
+    height: 1920px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.head{
+    width: 100%;
+    height:70px;
+    background: darkslategrey;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    color:white;
+    position: relative;
+    .lft{
+        width: 20%;
+        height: 100%;
+        position: absolute;
+        align-items: center;
+        display: flex;
+        font-size: 20px;
+        left: 20px;
+    }
+    .cent{
+        justify-content: center;
+        width: 40%;
+        height: 100%;
+        position: absolute;
+        left: 266px;
+        display: flex;
+    }
+    .rite{
+        position: absolute;
+        right: 33px;
+        top: 1px;
+    }
+}
+.imag{
+    background: url('./images/ima.png');
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 800px;
+    background-position: center;
+    background-size: 100%;
+    margin: auto;
+}
+
+ul{
+    display: flex;
+    list-style-type:none;
+    color:white;
+    li{
+        display: inline;
+        justify-content: space-between;
+        margin: 5px 6px;
+        font-size: 20px;
+    }
+}
+.coder{
+    width: 20%;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    align-items: center;
+}
+.signer{
+    width: 20%;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    align-items: center;
+}
+.box {
+    width: 240px;
+    height: 346px;
+    padding: 20px;
+    display: flex;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 20px 25px;
+    box-sizing: border-box;
+    flex-direction: column;
+    .proj {
+        width: 150px;
+        height: 115px;
+        margin-top: 10px;
+        border: 2px solid #d88314;
+        border-radius: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        z-index: 1000;
+    }
+    p:nth-of-type(1) {
+        border-top: 1px solid green;
+        color: blue;
+    }
+    p {
+        border-top: 1px solid maroon;
+        text-align: center;
+        padding: 15px;
+        color: purple;
+    }
+    .github {
+        height: 33px;
+        width: 85px;
+        margin-left: 0px;
+    }
+}
