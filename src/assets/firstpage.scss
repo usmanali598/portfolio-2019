@@ -35,8 +35,21 @@
         top: 1px;
     }
 }
+.imaas{
+    position: relative;
 .imag{
-    background: url('./images/ima.png');
+    background: url('./images/transparent.png');
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 800px;
+    background-position: center;
+    background-size: 100%;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+}
+.imag2{
+    background: url('./images/blackArea.png');
     background-repeat: no-repeat;
     width: 800px;
     height: 800px;
@@ -44,7 +57,7 @@
     background-size: 100%;
     margin: auto;
 }
-
+}
 ul{
     display: flex;
     list-style-type:none;

@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
 import { FaMailBulk, FaMobileAlt, FaBasketballBall, FaMapMarkerAlt, FaMotorcycle, FaCamera, FaLaptopCode, FaCheck } from 'react-icons/fa';
 import { IoLogoLinkedin, IoLogoFacebook, IoLogoWordpress } from "react-icons/io";
+import { TweenMax } from 'gsap';
 import Resume from './Resume';
 import { Link } from 'react-router-dom'
 import '../assets/firstpage.scss'
 
 class FirstPage extends Component
 {
+
+    componentDidMount()
+    {
+        TweenMax.from( '.imag', 5, { opacity: 0, delay: 2 } )
+    }
     render()
     {
         return (
@@ -32,7 +38,10 @@ class FirstPage extends Component
                 </div>
                 <div style={ { display: 'flex' } }>
                     <div className='coder'><p>&lt;CODER&gt;</p></div>
-                    <div className='imag'></div>
+                    <div className='imaas'>
+                        <div className='imag'></div>
+                        <div className='imag2'></div>
+                    </div>
                     <div className='signer'><p>D&euro;SIGN&euro;&reg;</p></div>
                 </div>
                 <div id='projects' style={ { display: 'flex' } }>
