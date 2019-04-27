@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import { FaMailBulk, FaMobileAlt, FaBasketballBall, FaMapMarkerAlt, FaMotorcycle, FaCamera, FaLaptopCode, FaCheck } from 'react-icons/fa';
 import '../assets/resume.scss'
-
+import Nav from './Nav'
 class Resume extends Component
 {
     componentDidMount()
     {
     }
-
     render()
     {
         // const { posts } = this.props;
         return (
             <div>
+                <Nav />
                 <div className='containResume'>
                     <div className='one'>
                         <div className='info'>
@@ -105,7 +105,7 @@ class Resume extends Component
                                             fontSize: '25px', fontWeight: 'bold', width: '270px', margin: '22px auto', marginBottom: '35px', textAlign: 'center'
                                         } }>SKILLS</p>
                                         <p style={ { margin: '0px' } }>JAVASCRIPT</p>
-                                        <input type='range' value={ 90 } />
+                                        <input type='range' value={ 75 } />
                                         <p style={ { margin: '0px' } }>JAVA</p>
                                         <input type='range' value={ 65 } />
                                         <p style={ { margin: '0px' } }>HTML/CSS</p>

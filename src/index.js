@@ -14,7 +14,7 @@ import { fetchReducer, fetchPostsWithRedux } from './reducer/fetchReducer';
 import { navReducer, anotherViewReducer, tryingReducer, testingReducer } from './reducer/newReducer';
 import logger from 'redux-logger';
 // import { hidingMain, showMain, hidingAnotherView, showAnotherView, HIDE_ANOTHER } from './action/newActions';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 export function mapStateToProps( state )
 {
