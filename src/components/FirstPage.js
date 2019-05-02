@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
-import { FaMailBulk, FaMobileAlt, FaBasketballBall, FaMapMarkerAlt, FaMotorcycle, FaCamera, FaLaptopCode, FaCheck } from 'react-icons/fa';
-import { IoLogoLinkedin, IoLogoFacebook, IoLogoWordpress } from "react-icons/io";
 import { TweenMax } from 'gsap';
-import Resume from './Resume';
 import Nav from './Nav';
-import { Link } from 'react-router-dom'
 import '../assets/firstpage.scss'
 
 class FirstPage extends Component
 {
-
     componentDidMount()
     {
         TweenMax.from( '.imag', 5, { opacity: 0, delay: 2 } )
@@ -20,6 +15,7 @@ class FirstPage extends Component
             <div className='container'>
                 <Nav />
                 <div style={ { display: 'flex' } }>
+                    <marquee style={ { position: 'absolute', fontSize: '12px' } }>Site under construction atm..</marquee>
                     <div className='coder'><p>&lt;CODER&gt;</p></div>
                     <div className='imaas'>
                         <div className='imag'></div>
@@ -69,8 +65,8 @@ class FirstPage extends Component
                     </div>
 
                     <div className="box">
-                        <span class='toptip'>Click the GitHub</span>
-                        <a href="https://usmanalicodes.netlify.com/" target="_blank" style={ { display: 'flex' } }>
+                        <span class='toptip'>Click the Image</span>
+                        <a href="https://play.google.com/store/apps/details?id=com.sometry.usman.proretro" target="_blank" style={ { display: 'flex' } }>
                             <img className="proj" src="https://i0.wp.com/guestspy.com/wp-content/uploads/2018/03/Top-10-Best-Mobile-Location-Tracker-900x480.png" alt="" />
                         </a>
                         <p style={ { paddingBottom: '0px' } }>Android Tracking Application</p>
@@ -80,8 +76,6 @@ class FirstPage extends Component
                                 alt="" />
                         </a>
                     </div>
-
-
                 </div>
             </div>
         )
