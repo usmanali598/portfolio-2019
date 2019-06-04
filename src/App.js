@@ -8,18 +8,10 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 class App extends Component
 {
-  componentDidMount()
-  {
-    // this.props.fetchPostsWithRedux();
-  }
-
   render()
   {
-    // console.log( this.props, 'app here sw wrwre' )
-    // const { posts } = this.props;
-
     return (
-      <div>
+      <div >
         <BrowserRouter>
           <div className="content">
             <Route exact path='/' component={ FirstPage } />
@@ -30,7 +22,6 @@ class App extends Component
     )
   }
 }
-
 
 
 export default App;
